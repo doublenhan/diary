@@ -43,7 +43,7 @@ export default function ViewJournalFromCloudinary({ onBack }) {
   useEffect(() => {
     const fetchEntries = async () => {
       try {
-        const apiUrl = 'http://localhost:5000/api/cloudinary-gallery';
+        const apiUrl = 'https://diaryjournal.vercel.app/api/cloudinaryGalleryApi';
         const res = await fetch(apiUrl);
         if (!res.ok) throw new Error('API not reachable');
         const contentType = res.headers.get('content-type');

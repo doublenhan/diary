@@ -7,7 +7,6 @@ export default async function handler(req, res) {
 
   try {
     const { CLOUD_NAME, API_KEY, API_SECRET } = process.env;
-    console.log({ CLOUD_NAME, API_KEY, API_SECRET });
 
     const url = `https://api.cloudinary.com/v1_1/${CLOUD_NAME}/resources/image?type=upload&context=true`;
     const auth = Buffer.from(`${API_KEY}:${API_SECRET}`).toString('base64');
