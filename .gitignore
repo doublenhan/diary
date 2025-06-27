@@ -1,0 +1,13 @@
+# Bỏ qua file cấu hình Cloudinary
+.env
+
+# Bỏ qua thư mục node_modules
+node_modules/
+
+# Bỏ qua thư mục build nếu dùng React/Vite
+dist/
+build/
+
+# Bỏ log và hệ thống
+*.log
+.DS_Store
