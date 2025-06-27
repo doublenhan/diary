@@ -10,6 +10,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "description": "",
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
     "@react-pdf/renderer": "^4.3.0",
     "axios": "^1.10.0",
@@ -25,12 +29,8 @@
     "react-router-dom": "^7.6.1",
     "vite": "^6.3.5"
   },
-  "engines": {
-  "node": "18.x",
-  "description": "",
   "devDependencies": {
     "@vitejs/plugin-react": "^4.6.0",
     "rollup": "^4.44.1"
   }
-  
 }
