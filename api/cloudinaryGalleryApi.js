@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   if (req.method !== 'GET') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
@@ -27,12 +27,12 @@ export default async function handler(req, res) {
 
     res.status(200).json(formatted);
   } catch (err) {
-  console.error('Cloudinary API error:', {
-    message: err.message,
-    data: err?.response?.data,
-    status: err?.response?.status,
-    stack: err.stack,
-  });
-  res.status(500).json({ error: 'Failed to fetch images from Cloudinary.' });
-}
-}
+    console.error('Cloudinary API error:', {
+      message: err.message,
+      data: err?.response?.data,
+      status: err?.response?.status,
+      stack: err.stack,
+    });
+    res.status(500).json({ error: 'Failed to fetch images from Cloudinary.' });
+  }
+};
