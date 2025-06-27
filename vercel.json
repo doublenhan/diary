@@ -3,14 +3,11 @@
     "env": {
       "NODE_VERSION": "20"
     }
-  }
-  {
+  },
   "functions": {
     "api/cloudinaryGalleryApi.js": {
       "memory": 512,
       "maxDuration": 10
     }
   }
-}
-
 }
