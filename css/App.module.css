@@ -1,0 +1,345 @@
+:root {
+  --bg-spring: #f0fff4;
+  --bg-summer: #fff7ed;
+  --bg-fall: #fff1f2;
+  --bg-winter: #e0f2fe;
+}
+
+.container.spring {
+  background-color: var(--bg-spring) !important;
+}
+.container.summer {
+  background-color: var(--bg-summer) !important;
+}
+.container.fall {
+  background-color: var(--bg-fall) !important;
+}
+.container.winter {
+  background-color: var(--bg-winter) !important;
+}
+
+.container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #ffe4e6, #fff0f6);
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.headerBox {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 0.5rem;
+}
+
+.header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #be123c;
+  margin-bottom: 0.5rem;
+}
+
+.subheader {
+  font-size: 1.2rem;
+  color: #be123c;
+}
+
+.formSection {
+  background-color: #ffffffdd;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem 2rem 2rem 2rem;
+  max-width: 640px;
+  margin: 0 auto 2.5rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: #db2777;
+  margin-bottom: 1rem;
+}
+
+.textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 0.75rem;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.input,
+.textarea {
+  margin-bottom: 1.2rem;
+  margin-top: 0.2rem;
+  padding: 0.85rem;
+  border: 1.5px solid #f9a8d4;
+  border-radius: 0.6rem;
+  font-size: 1rem;
+  background: #fff8fa;
+  transition: border-color 0.2s;
+  color: #be123c;
+  font-weight: 500;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: #f43f5e;
+  outline: none;
+}
+
+input[type="date"].input {
+  color: #be123c;
+  font-weight: 500;
+  background: #fff8fa;
+}
+
+input[type="date"].input::-webkit-input-placeholder { color: #be123c; }
+input[type="date"].input::-moz-placeholder { color: #be123c; }
+input[type="date"].input:-ms-input-placeholder { color: #be123c; }
+input[type="date"].input::placeholder { color: #be123c; }
+
+.button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #f43f5e;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #e11d48;
+}
+
+.entryList {
+  display: grid;
+  gap: 1rem;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.cardContent {
+  padding: 1rem;
+}
+
+.text {
+  color: #374151;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.imageWrapper {
+  width: 100%;
+  aspect-ratio: 4/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  margin-bottom: 0.75rem;
+  background: #f8fafc;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.date {
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+.fileInputWrapper {
+  margin: 1.2rem 0 0.8rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.fileInputLabel {
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.fileInputLabelContent {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+}
+
+.fileInputPreview {
+  display: block;
+  max-width: 60px;
+  max-height: 60px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-left: auto;
+  margin-right: 0;
+  order: 2;
+}
+
+.fileInputButton {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.6rem 1.4rem;
+  background: #f43f5e;
+  color: #fff;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+  border: none;
+  transition: background 0.2s;
+  margin-bottom: 0.5rem;
+  outline: none;
+}
+
+.fileInputButton:hover,
+.fileInputButton:focus {
+  background: #be123c;
+}
+
+.fileInputCameraIcon {
+  width: 24px;
+  height: 24px;
+  font-size: 1.7em;
+  margin-right: 0.5em;
+  margin-bottom: 0.9em;
+}
+
+.fileInput {
+  display: none;
+}
+
+/* Responsive for tablet and mobile */
+@media (max-width: 1024px) {
+  .container {
+    padding: 1rem;
+  }
+  .header {
+    font-size: 1.5rem;
+  }
+  .formSection {
+    padding: 1.2rem 0.7rem 1rem 0.7rem;
+    max-width: 98vw;
+  }
+  .entryList {
+    max-width: 98vw;
+  }
+  .grid {
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+  .card {
+    padding: 0.5rem;
+  }
+  .imageWrapper {
+    aspect-ratio: 16/10;
+    min-height: 120px;
+  }
+  .image {
+    max-height: 220px;
+  }
+  .fileInputPreview {
+    max-width: 40px;
+    max-height: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0.5rem;
+  }
+  .header {
+    font-size: 1.1rem;
+  }
+  .formSection {
+    padding: 0.7rem 0.2rem 0.7rem 0.2rem;
+    max-width: 100vw;
+  }
+  .entryList {
+    max-width: 100vw;
+  }
+  .grid {
+    gap: 0.5rem;
+    grid-template-columns: 1fr;
+  }
+  .imageWrapper {
+    aspect-ratio: 1/1;
+    min-height: 80px;
+  }
+  .image {
+    max-height: 120px;
+  }
+  .card {
+    padding: 0.25rem;
+  }
+  .fileInputPreview {
+    max-width: 32px;
+    max-height: 32px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 3rem 4vw;
+  }
+  .header {
+    font-size: 3rem;
+  }
+  .formSection {
+    max-width: 900px;
+    padding: 3.5rem 3rem 2.5rem 3rem;
+  }
+  .entryList {
+    max-width: 900px;
+  }
+  .grid {
+    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  }
+  .card {
+    padding: 2rem;
+    font-size: 1.25rem;
+  }
+  .imageWrapper {
+    aspect-ratio: 16/9;
+    min-height: 320px;
+  }
+  .image {
+    max-height: 520px;
+  }
+  .fileInputPreview {
+    max-width: 80px;
+    max-height: 80px;
+  }
+}

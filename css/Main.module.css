@@ -1,0 +1,191 @@
+:root {
+  --bg-spring: #f0fff4;
+  --bg-summer: #fff7ed;
+  --bg-fall: #fff1f2;
+  --bg-winter: #e0f2fe;
+}
+
+.container {
+  min-height: 100vh;
+  background-color: #ffe4e6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Georgia', serif;
+}
+
+.loveTitle {
+  font-size: 2.5rem;
+  color: #7b2c35;
+  margin-bottom: 1rem;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  border: 4px solid #f3dada;
+}
+
+.daysTogether {
+  font-size: 1.25rem;
+  color: #7b2c35;
+  margin-bottom: 1rem;
+}
+
+.buttonGroup {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  width: 100%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.journalButton {
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  background-color: transparent;
+  border: 2px solid #7b2c35;
+  border-radius: 8px;
+  color: #7b2c35;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.journalButton:hover {
+  background-color: #fddde6;
+  transform: scale(1.02);
+}
+
+.flowerImage {
+  margin-top: 2rem;
+  width: 30%;
+  max-width: 200px;
+  display: block;
+  margin-inline: auto;
+  height: auto;
+}
+
+/* 🌐 Tablet */
+@media (max-width: 1024px) {
+  .container {
+    padding: 1rem;
+  }
+  .loveTitle {
+    font-size: 2rem;
+  }
+  .avatar {
+    width: 110px;
+    height: 110px;
+  }
+  .buttonGroup {
+    max-width: 95vw;
+  }
+  .flowerImage {
+    width: 50%;
+  }
+}
+
+/* 📱 Mobile */
+@media (max-width: 600px) {
+  .container {
+    padding: 0.5rem;
+  }
+  .loveTitle {
+    font-size: 1.5rem;
+  }
+  .avatar {
+    width: 80px;
+    height: 80px;
+  }
+  .daysTogether {
+    font-size: 1rem;
+  }
+  .quote {
+    font-size: 0.95rem;
+    max-width: 95vw;
+  }
+  .buttonGroup {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch;
+    gap: 0.75rem;
+    padding: 0 1rem;
+    max-width: 100%;
+  }
+  .journalButton {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    border-radius: 12px;
+  }
+  .flowerImage {
+    width: 80%;
+  }
+}
+
+/* 🖥️ 2K desktop and up */
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 4rem 6vw;
+  }
+  .loveTitle {
+    font-size: 3.5rem;
+  }
+  .avatar {
+    width: 220px;
+    height: 220px;
+  }
+  .daysTogether {
+    font-size: 2rem;
+  }
+  .quote {
+    font-size: 1.5rem;
+    max-width: 700px;
+  }
+  .buttonGroup {
+    gap: 2rem;
+    margin-bottom: 3.5rem;
+    max-width: 600px;
+  }
+  .journalButton {
+    font-size: 1.3rem;
+    padding: 1.2rem 2.2rem;
+  }
+  .flowerImage {
+    width: 20%;
+  }
+}
+
+/* 🌈 Seasonal themes */
+.container.spring {
+  background-color: var(--bg-spring);
+}
+.container.summer {
+  background-color: var(--bg-summer);
+}
+.container.fall {
+  background-color: var(--bg-fall);
+}
+.container.winter {
+  background-color: var(--bg-winter);
+}
+
+.quote {
+  font-style: italic;
+  color: #444;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  max-width: 90%;
+  line-height: 1.5;
+}
